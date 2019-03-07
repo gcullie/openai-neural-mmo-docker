@@ -7,7 +7,7 @@ docker run -d -p 8080:8080 **built-image-name** tail -f /dev/null
   
   **or**
   
-docker run -d  --volume="$(pwd)/models:/root/models" --volume="$(pwd)/workspace:/root/workspace" -p 8080:8080 gcullie/openai-neural-mmo:master tail -f /dev/null
+docker run -d -p 8080:8080 gcullie/openai-neural-mmo:master tail -f /dev/null
 
 docker ps
 docker exec -i -t **id** /bin/bash
