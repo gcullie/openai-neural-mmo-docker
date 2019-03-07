@@ -3,7 +3,7 @@ https://github.com/openai/neural-mmo
 
 Docker for Openai's Neural MMO
 
-docker run -d -p 8080:8080 *built-image-name* tail -f /dev/null
+docker run -d -p 8080:8080 **built-image-name** tail -f /dev/null
   
   **or**
   
