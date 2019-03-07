@@ -7,12 +7,12 @@ docker run -d -p 8080:8080 **built-image-name** tail -f /dev/null
   
   **or**
   
-docker run -d -p 8080:8080 gcullie/openai-neural-mmo:master tail -f /dev/null
+docker run -d -p 8080:8080 gcullie/openai-neural-mmo:master tail -f /dev/null</br>
 
-docker ps
-docker exec -i -t **id** /bin/bash
-python Forge.py --render
-docker stop **id**
+docker ps  *(get the id for the runner docker)*</br>
+docker exec -i -t **id** /bin/bash</br>
+python Forge.py --render</br>
+docker stop **id**</br>
 
-python Forge.py --render
-http://localhost:8080/forge/embyr/ in Firefox (Chrome may not work)
+python Forge.py --render</br>
+http://localhost:8080/forge/embyr/ in Firefox (Chrome may not work)</br>
