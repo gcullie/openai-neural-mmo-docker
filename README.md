@@ -3,11 +3,11 @@ https://github.com/openai/neural-mmo
 
 Docker for Openai's Neural MMO
 
-docker run -d -p 8080:8080 openai-neural-mmo-docker tail -f /dev/null
+docker run -d -p 8080:8080 *built-image-name* tail -f /dev/null
   
   **or**
   
-docker run -d  --volume="$(pwd)/models:/root/models" --volume="$(pwd)/workspace:/root/workspace" -p 8080:8080 docker pull gcullie/openai-neural-mmo:master tail -f /dev/null
+docker run -d  --volume="$(pwd)/models:/root/models" --volume="$(pwd)/workspace:/root/workspace" -p 8080:8080 gcullie/openai-neural-mmo:master tail -f /dev/null
 
 docker ps
 docker exec -i -t **id** /bin/bash
