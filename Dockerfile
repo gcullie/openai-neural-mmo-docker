@@ -26,7 +26,7 @@ RUN apt-get install -y curl grep sed dpkg && \
     apt-get clean
 
 #Neural-MMO Install
-ENV PROJECTHOME=$HOME/projekt
+ENV PROJECTHOME=/root/projekt
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y build-essential python3-dev python3-pip \
     && apt-get clean
@@ -51,4 +51,4 @@ RUN pip install --user --upgrade tensorflow
 EXPOSE 80
 EXPOSE 8080
 
-#CMD [ ]
+#CMD [ "python", "Forge.py", "--render" ]
